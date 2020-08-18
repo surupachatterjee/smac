@@ -4,7 +4,7 @@ import { AboutPageComponent } from "./about-page/about-page.component";
 import { FactsPageComponent } from "./facts-page/facts-page.component";
 
 const routes: Routes = [
-  { path: "", component: AboutPageComponent },
+  { path: "", redirectTo: "about", pathMatch: "full" },
   { path: "about", component: AboutPageComponent },
   { path: "facts", component: FactsPageComponent },
 ];

@@ -1,6 +1,18 @@
-<app-header></app-header>
-<div>
-  <div class="row text-center">
-    <h1>Fun Facts about Texas</h1>
+<div
+  class="container-fluid"
+  style="
+    background-color: rgb(242, 242, 242);
+    font-family: 'Times New Roman', Times, serif;
+    overflow: auto;
+  "
+>
+  <app-header></app-header>
+  <div>
+    <div class="row text-center" style="justify-content: center; margin: 2rem;">
+      <h2>Fun Facts about Texas</h2>
+    </div>
+    <ul>
+      <li *ngFor="let fact of facts">{{ fact }}</li>
+    </ul>
   </div>
 </div>
